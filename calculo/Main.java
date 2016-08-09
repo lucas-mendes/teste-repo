@@ -3,6 +3,7 @@ package calculo;
 public class Main{
 
     private Soma soma;
+    private Subtracao sub;
 
     public static void main(String[] args) {
         int numx = 10;
@@ -13,5 +14,8 @@ public class Main{
     public Main(int numA, int numB) {
         soma = new Soma(numA, numB);
         System.out.println(soma.somar());
+
+        sub = new Subtracao(numA, numB);
+        System.out.println(sub.subtrair());
     }
 }
